@@ -1,4 +1,3 @@
-// src/components/TodoItem.js
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -42,8 +41,8 @@ const TodoItem = ({ todo }) => {
             ) : (
                 <span className={todo.completed ? 'completed' : ''}>{todo.text}</span>
             )}
-            <button onClick={handleEdit}>Edit</button>
-            <button onClick={handleDelete}>Delete</button>
+            <button className="action-edit" onClick={handleEdit}>Edit</button>
+            <button className="action-delete" onClick={handleDelete}>Delete</button>
             {isEditing && (
                 <button onClick={handleSave} className="save-button">
                 Save

@@ -9,6 +9,23 @@ body {
   min-height: 100vh;
 }
 
+.filter{
+  margin: 10px;
+}
+
+.kategori{
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: #007bff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.kategori:hover{
+  background-color: #002751;
+}
+
 .todo-list {
   background-color: #fff;
   border-radius: 5px;
@@ -35,4 +52,53 @@ body {
   cursor: pointer;
 }
 
+.add-todo button:hover {
+  background-color: #003268;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 8px;
+  background-color: #e1e1e1;
+  margin-right: 20px;
+  margin-left: -15px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.action-edit, .action-delete, .save-button{
+  margin-left: 3px;
+  color: #fff;
+}
+
+.action-edit{
+  background-color: #0073ed;
+  border: #0073ed;
+  border-radius: 3px;
+}
+
+.action-edit:hover{
+  background-color: #014389;
+}
+
+.action-delete{
+  background-color: rgb(213, 1, 1);
+  border: rgb(213, 1, 1);
+  border-radius: 3px;
+}
+
+.action-delete:hover{
+  background-color: rgb(117, 0, 0);
+}
+
+.save-button{
+  background-color: green;
+  border: green;
+  border-radius: 3px;
+}
+
+.save-button:hover{
+  background-color: rgb(0, 44, 0);
+}
 

@@ -23,10 +23,12 @@ const todosReducer = (state = initialState, action) => {
                 : todo
             ),
             };
+
         case 'DELETE_TODO':
             return {
             todos: state.todos.filter((todo) => todo.id !== action.payload),
             };
+
         case 'EDIT_TODO':
             return {
             todos: state.todos.map((todo) =>
@@ -35,6 +37,7 @@ const todosReducer = (state = initialState, action) => {
                 : todo
             ),
             };
+            
         default:
             return state;
     }

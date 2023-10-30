@@ -1,4 +1,3 @@
-// src/components/TodoList.js
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
@@ -34,9 +33,9 @@ const TodoList = () => {
                 <button onClick={handleAddTodo}>Add</button>
             </div>
             <div className="filter">
-                <button onClick={() => setFilter('all')}>All</button>
-                <button onClick={() => setFilter('active')}>Active</button>
-                <button onClick={() => setFilter('completed')}>Completed</button>
+                <button className="kategori" onClick={() => setFilter('all')}>All</button>
+                <button className="kategori" onClick={() => setFilter('active')}>Active</button>
+                <button className="kategori" onClick={() => setFilter('completed')}>Completed</button>
             </div>
             <ul className="todos">
                 {todos.map((todo) => {

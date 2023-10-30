@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>Todo List</h1>
       </header>
       <main>
         <TodoList />
